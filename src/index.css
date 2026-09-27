@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  --font-amiri: "Amiri", serif;
+  --font-arabic: "Noto Sans Arabic", sans-serif;
+}
+
+body {
+  direction: rtl;
+  background-color: #f8f9fa;
+  color: #1a1a1a;
+  font-family: var(--font-arabic);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quran-text {
+  font-family: var(--font-amiri);
+  line-height: 2.2;
+}
+
+.islamic-pattern {
+  background-color: #fdfcf0;
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #f9f295 50%, #d4af37 100%);
+}
+
+.green-gradient {
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+}
+
+/* --- Dark Mode Style Overrides --- */
+.dark body {
+  background-color: #030712;
+  color: #f3f4f6;
+}
+
+.dark .bg-slate-50 {
+  background-color: #020617 !important; /* extremely deep background */
+  color: #f3f4f6 !important;
+}
+
+.dark .bg-white,
+.dark .bg-white\/95 {
+  background-color: #0f172a !important; /* bg-slate-900 */
+  color: #f3f4f6 !important;
+}
+
+.dark .text-gray-900,
+.dark .text-slate-900 {
+  color: #f3f4f6 !important;
+}
+
+.dark .text-gray-800,
+.dark .text-slate-800 {
+  color: #e5e7eb !important;
+}
+
+.dark .text-gray-700,
+.dark .text-slate-700 {
+  color: #d1d5db !important;
+}
+
+.dark .text-gray-655,
+.dark .text-gray-650,
+.dark .text-gray-600,
+.dark .text-gray-500,
+.dark .text-slate-500 {
+  color: #9ca3af !important;
+}
+
+.dark .border,
+.dark .border-emerald-100, 
+.dark .border-emerald-100\/60,
+.dark .border-emerald-100\/80,
+.dark .border-gray-100,
+.dark .border-gray-200,
+.dark .border-gray-200\/85 {
+  border-color: #1e293b !important; /* border-slate-800 */
+}
+
+.dark .bg-emerald-50,
+.dark .bg-emerald-50\/50,
+.dark .bg-emerald-50\/70,
+.dark .bg-gray-50,
+.dark .bg-slate-50\/70 {
+  background-color: #1e293b !important; /* bg-slate-800 */
+  color: #f3f4f6 !important;
+}
+
+.dark .text-emerald-900 {
+  color: #34d399 !important; /* text-emerald-400 */
+}
+
+.dark .text-emerald-800 {
+  color: #6ee7b7 !important; /* text-emerald-300 */
+}
+
+.dark .text-emerald-700 {
+  color: #10b981 !important; /* text-emerald-500 */
+}
+
+.dark select, 
+.dark input {
+  background-color: #1e293b !important;
+  color: #f3f4f6 !important;
+  border-color: #334155 !important;
+}
+
+.dark select option {
+  background-color: #0f172a !important;
+  color: #f3f4f6 !important;
+}
+
+.dark .bg-amber-50,
+.dark .bg-amber-50\/50 {
+  background-color: #1c1917 !important; /* bg-stone-900 */
+  color: #fde047 !important; /* text-yellow-300 */
+  border-color: #451a03 !important;
+}
+
+.dark .text-amber-900,
+.dark .text-amber-950,
+.dark .text-amber-850 {
+  color: #fef08a !important; /* text-amber-200 */
+}
+
+.dark .hover\:bg-gray-50:hover,
+.dark .hover\:bg-emerald-50:hover,
+.dark .hover\:bg-emerald-50\/50:hover {
+  background-color: #1e293b !important;
+}
+
+.dark .hover\:text-gray-900:hover,
+.dark .hover\:text-emerald-700:hover {
+  color: #6ee7b7 !important;
+}
+
